@@ -41,7 +41,7 @@ section h1 {
 
 
 nav {
-	width: 100%;
+	min-width: 100%;
 	margin: 0 0 1em 0;
     float: left;
 	padding: 0;
@@ -64,7 +64,7 @@ nav li {
 
 nav li a {
   display: block;
-  text-align: left;
+  text-align: center;
   padding: 6px 9px;
 	font-family: 'Castoro Titling';
   font-weight: normal;
@@ -77,4 +77,11 @@ nav li a {
 
 nav li a:hover {
   background-color: #7E8CE0;
+}
+
+@media screen and (max-width: 460px) {
+    li {
+        width: 100% !important;
+        float:none !important;
+    }
 }
