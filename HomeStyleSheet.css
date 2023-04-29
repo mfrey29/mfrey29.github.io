@@ -55,10 +55,9 @@ nav {
 nav ul {
 	text-align: center;
   list-style-type: none;
-/*	border: 2px solid red;*/
+	border: 2px solid red;
   overflow: hidden;
   background-color: #1C1E26;
-	
 	margin: 0px auto;
 	display: inline-block;
 	
@@ -66,18 +65,18 @@ nav ul {
 
 nav li {
   float: left;
-	width: auto;
+	width: 180px;
 	
 }
 
 nav li a {
 	text-align: center;
   display: block;
-  padding: 0px 9px;
+  padding: 0px 18px;
 	font-family: 'Castoro Titling';
   font-weight: normal;
     font-style: normal;
-  font-size: 15px;
+  font-size: 13px;
 	border: 2px solid blue;
 	color: #D9D7D5;
   text-decoration: none;
