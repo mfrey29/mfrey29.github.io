@@ -55,9 +55,7 @@ nav {
 nav ul {
 	text-align: center;
   list-style-type: none;
-	border: 2px solid red;
   overflow: hidden;
-  background-color: #1C1E26;
 	margin: 0px auto;
 	display: inline-block;
 	
@@ -73,12 +71,15 @@ nav li a {
 	text-align: center;
   display: block;
   padding: 0px 18px;
+	color: #D9D7D5;
 	font-family: 'Castoro Titling';
   font-weight: normal;
     font-style: normal;
   font-size: 13px;
+/*
 	border: 2px solid blue;
 	color: #D9D7D5;
+*/
   text-decoration: none;
 
 }
@@ -86,6 +87,8 @@ nav li a {
 nav li a:hover {
   background-color: #7E8CE0;
 }
+
+
 
 @media screen and (max-width: 460px) {
     li {
