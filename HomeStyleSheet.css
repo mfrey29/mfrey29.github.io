@@ -99,16 +99,17 @@ nav li a:hover {
   background-color: #B39D9B;
 }
 
+
 /*Necklaces Dropdown*/
 
 nav ul li a:hover{
         color: #fff;
-        background: #A7A9B3;
+        background: #7E8CE0;
 }
 
 nav ul li ul.dropdown{
         min-width: 100%; /* Set width of the dropdown */
-        background: #13141A;
+        background: blue;
         display: none;
         padding: 12px;
         z-index: 999;
@@ -129,13 +130,13 @@ nav ul li ul.dropdown li{
 /*Bracelets Dropdown*/
 
 nav ul li a:hover{
-        color: #A38F8E;
-/*        background: ;*/
+        color: #fff;
+        background: #7E8CE0;
 }
 
 nav ul li ul.dropdown2 {
         min-width: 100%; /* Set width of the dropdown */
-        background: #13141A;
+        background: blue;
         display: none;
         padding: 12px;
         z-index: 999;
@@ -156,13 +157,13 @@ nav ul li ul.dropdown2 li {
 /*Rings Dropdown*/
 
 nav ul li a:hover{
-        color: red;
-        background: #9D9D99;
+        color: #fff;
+        background: #7E8CE0;
 }
 
 nav ul li ul.dropdown3 {
         min-width: 100%; /* Set width of the dropdown */
-        background: #13141A;
+        background: blue;
         display: none;
         padding: 12px;
         z-index: 999;
