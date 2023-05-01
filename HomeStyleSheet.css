@@ -88,6 +88,28 @@ nav li a:hover {
   background-color: #7E8CE0;
 }
 
+nav ul li a:hover{
+        color: #fff;
+        background: #7E8CE0;
+}
+
+nav ul li ul.dropdown{
+        min-width: 100%; /* Set width of the dropdown */
+        background: purple;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+}
+
+nav ul li:hover ul.dropdown{
+        display: block;	/* Display the dropdown */
+}
+
+nav ul li ul.dropdown li{
+        display: block;
+		
+}
 
 
 @media screen and (max-width: 460px) {
