@@ -1,5 +1,9 @@
+/*Icons*/
+
 @import url('https://unpkg.com/css.gg@2.0.0/icons/css/mail.css');
 @import url('https://unpkg.com/css.gg@2.0.0/icons/css/phone.css');
+
+/*Fonts*/
 
 @font-face {
     font-family: 'castoro_titlingregular';
@@ -21,6 +25,8 @@
 
 }
 
+/*Background Color or Image*/
+
 body {
   background-color: #262833;
 }
@@ -30,6 +36,8 @@ section {
   margin: 0px auto;
 	
 }
+
+/*Logo*/
 
 section h1 {
 	font-family: 'Kristi';
@@ -68,6 +76,8 @@ nav li {
 	
 }
 
+/*Navigation Bar Text Color*/
+
 nav li a {
 	text-align: center;
   display: block;
@@ -86,20 +96,19 @@ nav li a {
 }
 
 nav li a:hover {
-  background-color: #7E8CE0;
+  background-color: #B39D9B;
 }
-
 
 /*Necklaces Dropdown*/
 
 nav ul li a:hover{
         color: #fff;
-        background: #7E8CE0;
+        background: #A7A9B3;
 }
 
 nav ul li ul.dropdown{
         min-width: 100%; /* Set width of the dropdown */
-        background: blue;
+        background: #13141A;
         display: none;
         padding: 12px;
         z-index: 999;
@@ -120,13 +129,13 @@ nav ul li ul.dropdown li{
 /*Bracelets Dropdown*/
 
 nav ul li a:hover{
-        color: #fff;
-        background: #7E8CE0;
+        color: #A38F8E;
+/*        background: ;*/
 }
 
 nav ul li ul.dropdown2 {
         min-width: 100%; /* Set width of the dropdown */
-        background: blue;
+        background: #13141A;
         display: none;
         padding: 12px;
         z-index: 999;
@@ -147,13 +156,13 @@ nav ul li ul.dropdown2 li {
 /*Rings Dropdown*/
 
 nav ul li a:hover{
-        color: #fff;
-        background: #7E8CE0;
+        color: red;
+        background: #9D9D99;
 }
 
 nav ul li ul.dropdown3 {
         min-width: 100%; /* Set width of the dropdown */
-        background: blue;
+        background: #13141A;
         display: none;
         padding: 12px;
         z-index: 999;
