@@ -95,15 +95,16 @@ nav ul li a:hover{
 
 nav ul li ul.dropdown{
         min-width: 100%; /* Set width of the dropdown */
-        background: purple;
+        background: blue;
         display: none;
-        position: absolute;
+        padding: 12px;
         z-index: 999;
         left: 0;
+	
 }
 
 nav ul li:hover ul.dropdown{
-        display: block;	/* Display the dropdown */
+        display: inline-block;	/* Display the dropdown */
 }
 
 nav ul li ul.dropdown li{
