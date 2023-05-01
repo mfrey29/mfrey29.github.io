@@ -41,6 +41,7 @@ section h1 {
 	margin-bottom: 36px;
 }
 
+/*Navigation Bar*/
 
 nav {
 	list-style: none;
@@ -88,6 +89,9 @@ nav li a:hover {
   background-color: #7E8CE0;
 }
 
+
+/*Necklaces Dropdown*/
+
 nav ul li a:hover{
         color: #fff;
         background: #7E8CE0;
@@ -111,6 +115,62 @@ nav ul li ul.dropdown li{
         display: block;
 		
 }
+
+
+/*Bracelets Dropdown*/
+
+nav ul li a:hover{
+        color: #fff;
+        background: #7E8CE0;
+}
+
+nav ul li ul.dropdown2 {
+        min-width: 100%; /* Set width of the dropdown */
+        background: blue;
+        display: none;
+        padding: 12px;
+        z-index: 999;
+        left: 0;
+	
+}
+
+nav ul li:hover ul.dropdown2 {
+        display: inline-block;	/* Display the dropdown */
+}
+
+nav ul li ul.dropdown2 li {
+        display: block;
+		
+}
+
+
+/*Rings Dropdown*/
+
+nav ul li a:hover{
+        color: #fff;
+        background: #7E8CE0;
+}
+
+nav ul li ul.dropdown3 {
+        min-width: 100%; /* Set width of the dropdown */
+        background: blue;
+        display: none;
+        padding: 12px;
+        z-index: 999;
+        left: 0;
+	
+}
+
+nav ul li:hover ul.dropdown3 {
+        display: inline-block;	/* Display the dropdown */
+}
+
+nav ul li ul.dropdown3 li {
+        display: block;
+		
+}
+
+
 
 
 @media screen and (max-width: 460px) {
