@@ -82,7 +82,7 @@ nav li a {
 	text-align: center;
   display: block;
   padding: 0px 18px;
-	color: #D9D7D5;
+	color: #FEF9F3;
 	font-family: 'Castoro Titling';
   font-weight: normal;
     font-style: normal;
@@ -109,7 +109,7 @@ nav ul li a:hover{
 
 nav ul li ul.dropdown{
         min-width: 100%; /* Set width of the dropdown */
-        background: #13141A;
+         background: #B3B0AB; /*Box Backround Color*/
         display: none;
         padding: 12px;
         z-index: 999;
@@ -121,10 +121,22 @@ nav ul li:hover ul.dropdown{
         display: inline-block;	/* Display the dropdown */
 }
 
+/*Selections Box*/
+
 nav ul li ul.dropdown li{
         display: block;
+
 		
 }
+
+nav ul li ul.dropdown li a{
+        display: block;
+	border: 2px red;
+
+		
+}
+
+
 
 
 /*Bracelets Dropdown*/
@@ -134,9 +146,10 @@ nav ul li a:hover{
         background: #7E8CE0;
 }
 
+
 nav ul li ul.dropdown2 {
         min-width: 100%; /* Set width of the dropdown */
-        background: #13141A;
+        background: #B3B0AB; /*Box Backround Color*/
         display: none;
         padding: 12px;
         z-index: 999;
@@ -148,10 +161,6 @@ nav ul li:hover ul.dropdown2 {
         display: inline-block;	/* Display the dropdown */
 }
 
-nav ul li ul.dropdown2 li {
-        display: block;
-		
-}
 
 
 /*Rings Dropdown*/
@@ -163,7 +172,7 @@ nav ul li a:hover{
 
 nav ul li ul.dropdown3 {
         min-width: 100%; /* Set width of the dropdown */
-        background: #13141A;
+         background: #B3B0AB; /*Box Backround Color*/
         display: none;
         padding: 12px;
         z-index: 999;
