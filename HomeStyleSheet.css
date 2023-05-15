@@ -5,25 +5,7 @@
 
 /*Fonts*/
 
-@font-face {
-    font-family: 'castoro_titlingregular';
-    src: url('castorotitling-regular-webfont.woff2') format('woff2'),
-      url('castorotitling-regular-webfont.ttf') format('truetype'),
-         url('castorotitling-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'kristiregular';
-    src: url('kristi-regular-webfont.woff2') format('woff2'),
-         url('kristi-regular-webfont.woff') format('woff'),
-		url('kristi-regular-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
-}
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Inknut+Antiqua:wght@300&display=swap');
 
 /*Background Color or Image*/
 
@@ -40,7 +22,7 @@ section {
 /*Logo*/
 
 section h1 {
-	font-family: 'Kristi';
+	font-family: 'Inknut Antiqua';
   font-weight: normal;
     font-style: normal;
   font-size: 56px;
@@ -129,13 +111,6 @@ nav ul li ul.dropdown li{
 		
 }
 
-nav ul li ul.dropdown li a{
-        display: block;
-	border: 2px red;
-
-		
-}
-
 
 
 
@@ -187,6 +162,11 @@ nav ul li:hover ul.dropdown3 {
 nav ul li ul.dropdown3 li {
         display: block;
 		
+}
+
+nav ul li:hover ul.dropdown3 a {
+	background: red;
+	
 }
 
 
