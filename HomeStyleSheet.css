@@ -25,10 +25,18 @@ section h1 {
 	font-family: 'Inknut Antiqua';
   font-weight: normal;
     font-style: normal;
-  font-size: 56px;
+  font-size: 36px;
 	color: #FEF9F3;
   text-align: center;
 	margin-bottom: 36px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+img {
+  display: inline-block;
+  margin: 10px;
 }
 
 /*Navigation Bar*/
@@ -103,6 +111,13 @@ nav ul li:hover ul.dropdown{
         display: inline-block;	/* Display the dropdown */
 }
 
+nav ul li:hover ul.dropdown a {
+  max-width: 100%;
+  display: block; /* Change to block to center the text vertically */
+  text-align: center; /* Center the text horizontally */
+  line-height: 1.5; /* vertical padding */
+}
+
 /*Selections Box*/
 
 nav ul li ul.dropdown li{
@@ -121,7 +136,6 @@ nav ul li a:hover{
         background: #7E8CE0;
 }
 
-
 nav ul li ul.dropdown2 {
         min-width: 100%; /* Set width of the dropdown */
         background: #B3B0AB; /*Box Backround Color*/
@@ -136,7 +150,12 @@ nav ul li:hover ul.dropdown2 {
         display: inline-block;	/* Display the dropdown */
 }
 
-
+nav ul li:hover ul.dropdown2 a {
+  max-width: 100%;
+  display: block; /* Change to block to center the text vertically */
+  text-align: center; /* Center the text horizontally */
+  line-height: 1.5; /* Adjust the line height for vertical centering if needed */
+}
 
 /*Rings Dropdown*/
 
@@ -160,12 +179,16 @@ nav ul li:hover ul.dropdown3 {
 }
 
 nav ul li ul.dropdown3 li {
-        display: block;
+        display: inline-block;
 		
 }
 
 nav ul li:hover ul.dropdown3 a {
-	background: red;
+  max-width: 100%;
+  display: block; /* Change to block to center the text vertically */
+  text-align: center; /* Center the text horizontally */
+  line-height: 1.5; /* Adjust the line height for vertical centering if needed */
+	
 	
 }
 
