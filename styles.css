@@ -20,7 +20,7 @@ h1 {
 }
 
 nav {
-    background-color: #333;
+    /* Removed background color */
 }
 
 nav ul {
@@ -33,18 +33,33 @@ nav ul {
 
 nav ul li {
     margin: 0 1rem;
+    position: relative; /* Required for the underline effect */
 }
 
 nav ul li a {
-    color: white;
+    color: #455B5C; /* Updated text color for links */
     text-decoration: none;
     padding: 1rem;
     display: block;
+    position: relative;
 }
 
-nav ul li a:hover {
-    background-color: #70CAC5; /* Updated hover color */
-    color: black;
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px; /* Thickness of the underline */
+    width: 100%;
+    background-color: #455B5C; /* Color of the underline */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 main {
@@ -56,8 +71,8 @@ section {
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    /* Removed background color */
+    color: #455B5C; /* Updated text color for footer */
     text-align: center;
     padding: 1rem;
     position: fixed;
