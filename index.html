@@ -44,33 +44,20 @@
 
         nav ul li {
             margin: 0 1rem;
-            position: relative; /* Required for the underline effect */
+            position: relative;
         }
 
-        nav ul li a {
+        nav ul li > a {
             color: #455B5C; /* Updated text color for links */
             text-decoration: none;
             padding: 1rem;
             display: block;
             position: relative;
+            transition: opacity 0.3s; /* Smooth transition for opacity */
         }
 
-        nav ul li > a::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            height: 2px; /* Thickness of the underline */
-            width: 100%;
-            background-color: #455B5C; /* Color of the underline */
-            transform: scaleX(0);
-            transform-origin: bottom right;
-            transition: transform 0.25s ease-out;
-        }
-
-        nav ul li > a:hover::after {
-            transform: scaleX(1);
-            transform-origin: bottom left;
+        nav ul li > a:hover {
+            opacity: 0.6; /* Reduce opacity on hover */
         }
 
         nav ul li ul {
@@ -78,11 +65,13 @@
             position: absolute;
             top: 100%;
             left: 0;
-            background-color: #FEF7F3; /* Background color of the dropdown */
+            background-color: #ffffff; /* Background color of the dropdown */
             box-shadow: 0px 4px 6px rgba(115, 125, 128, 0.5); /* Dropdown shadow */
-            padding: 0;
+            border-radius: 8px; /* Corner radius for the dropdown */
+            padding: 0.5rem; /* Padding to keep items inside the dropdown */
             margin: 0;
             list-style: none;
+            z-index: 1; /* Ensure dropdown is above other elements */
         }
 
         nav ul li:hover ul {
@@ -94,16 +83,18 @@
         }
 
         nav ul li ul li a {
-            padding: 1rem;
+            padding: 0.5rem 1rem; /* Adjusted padding for the capsule effect */
             display: block;
             white-space: nowrap;
             font-weight: 400; /* Regular weight by default */
             text-decoration: none; /* Remove underline */
+            transition: opacity 0.3s; /* Smooth transition for opacity */
         }
 
         nav ul li ul li a:hover {
             font-weight: 700; /* Bold weight on hover */
             text-decoration: none; /* No underline animation */
+            opacity: 0.6; /* Reduce opacity on hover */
         }
 
         main {
@@ -173,5 +164,11 @@
     </script>
 </body>
 </html>
+
+
+
+
+
+
 
 
