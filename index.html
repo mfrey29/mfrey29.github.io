@@ -42,12 +42,12 @@
             justify-content: center;
         }
 
-        nav ul li {
+        nav ul > li {
             margin: 0 1rem;
             position: relative;
         }
 
-        nav ul li > a {
+        nav ul > li > a {
             color: #455B5C; /* Updated text color for links */
             text-decoration: none;
             padding: 1rem;
@@ -56,8 +56,8 @@
             transition: opacity 0.3s; /* Smooth transition for opacity */
         }
 
-        nav ul li > a:hover {
-            opacity: 0.6; /* Reduce opacity on hover */
+        nav ul > li:hover > a {
+            opacity: 0.6; /* Reduce opacity on hover for top-level items */
         }
 
         nav ul li ul {
@@ -66,7 +66,7 @@
             top: 100%;
             left: 0;
             background-color: #ffffff; /* Background color of the dropdown */
-            box-shadow: 0px 4px 6px rgba(115, 125, 128, 0.5); /* Dropdown shadow */
+            box-shadow: 0px 4px 6px rgba(115, 125, 128, 0.1); /* Dropdown shadow */
             border-radius: 8px; /* Corner radius for the dropdown */
             padding: 0.5rem; /* Padding to keep items inside the dropdown */
             margin: 0;
@@ -83,18 +83,17 @@
         }
 
         nav ul li ul li a {
-            padding: 0.5rem 1rem; /* Adjusted padding for the capsule effect */
+            padding: 0.5rem 1rem; /* Adjusted padding for the dropdown items */
             display: block;
             white-space: nowrap;
             font-weight: 400; /* Regular weight by default */
             text-decoration: none; /* Remove underline */
-            transition: opacity 0.3s; /* Smooth transition for opacity */
         }
 
         nav ul li ul li a:hover {
             font-weight: 700; /* Bold weight on hover */
             text-decoration: none; /* No underline animation */
-            opacity: 0.6; /* Reduce opacity on hover */
+            opacity: 1; /* Ensure no opacity change on hover */
         }
 
         main {
@@ -136,6 +135,7 @@
                     <li><a href="#womens-all-rings">All Rings</a></li>
                 </ul>
             </li>
+            <li><a href="#process">Process</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -147,6 +147,10 @@
         <section id="women">
             <h2>About</h2>
             <p>This is the about section.</p>
+        </section>
+        <section id="process">
+            <h2>Process</h2>
+            <p>This is the process section.</p>
         </section>
         <section id="contact">
             <h2>Contact</h2>
@@ -164,6 +168,8 @@
     </script>
 </body>
 </html>
+
+
 
 
 
