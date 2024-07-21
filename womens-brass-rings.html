@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Frey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif; /* Set global font to Roboto */
+            margin: 0;
+            padding: 0;
+            background-color: #FEF7F3; /* Updated background color */
+            color: #455B5C; /* Updated text color */
+        }
+
+        header {
+            color: #455B5C;
+            padding: 1rem;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: #FEF7F3; /* Match the background color to body */
+            z-index: 2; /* Ensure it stays above other content */
+        }
+
+        h1 {
+            font-family: 'Inknut Antiqua', serif;
+            font-weight: 400; /* Regular weight */
+            color: #455B5C; /* Updated text color for h1 */
+            margin: 0;
+        }
+
+        nav {
+            margin-top: 60px; /* Adjust to position below the header */
+            width: 100%;
+            background-color: #FEF7F3; /* Match the background color to body */
+            position: fixed;
+            top: 60px; /* Adjust to position below the header */
+            z-index: 1; /* Ensure it stays above main content */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul > li {
+            margin: 0 1rem;
+            position: relative;
+        }
+
+        nav ul > li > a {
+            color: #455B5C; /* Updated text color for links */
+            text-decoration: none;
+            padding: 1rem;
+            display: block;
+            position: relative;
+            transition: opacity 0.3s; /* Smooth transition for opacity */
+        }
+
+        nav ul > li:hover > a {
+            opacity: 0.6; /* Reduce opacity on hover for top-level items */
+        }
+
+        nav ul li ul {
+            display: none; /* Hide
+
+
+
+
+
+
+
+
+
+
+
+
