@@ -39,7 +39,8 @@ struct InteractiveProfileGridView: View {
                                 .frame(maxWidth: .infinity, alignment: .trailing)
                                 .padding(.horizontal, 7)
                                 .padding(.vertical, 1)
-                                .background(Color("DistanceBannerr"))
+                                .background(Color("DistanceBanner"))
+                                
 
                             // FLUSH grid, no horizontal padding
                             LazyVGrid(columns: columns, spacing: cardSpacing) {
