@@ -11,6 +11,8 @@ struct InteractiveProfileGridView: View {
     @State private var profiles: [Profile] = sampleProfiles
     @State private var draggedProfileId: UUID?
     @State private var isHoveringTrash = false
+    @State private var showSideBin = false
+    @State private var hideWorkItem: DispatchWorkItem?
 
     // Spacing between cards (internal only)
     let cardSpacing: CGFloat = 6
@@ -59,23 +61,31 @@ struct InteractiveProfileGridView: View {
                     }
                     
                 }
+                .simultaneousGesture(
+                    DragGesture().onChanged { _ in
+                        handleScroll()
+                    }
+                )
                 
 
             }
             
             // Floating Green Side Bin (Trash) Button
-            SideBinButton(isHovering: isHoveringTrash)
-                .onDrop(of: [.text], isTargeted: $isHoveringTrash) { providers in
-                    _ = providers.first?.loadObject(ofClass: NSString.self) { object, _ in
-                        if let idString = object as? String,
-                           let uuid = UUID(uuidString: idString) {
-                            DispatchQueue.main.async {
-                                profiles.removeAll { $0.id == uuid }
+            if showSideBin {
+                SideBinButton(isHovering: isHoveringTrash)
+                    .onDrop(of: [.text], isTargeted: $isHoveringTrash) { providers in
+                        _ = providers.first?.loadObject(ofClass: NSString.self) { object, _ in
+                            if let idString = object as? String,
+                               let uuid = UUID(uuidString: idString) {
+                                DispatchQueue.main.async {
+                                    profiles.removeAll { $0.id == uuid }
+                                }
                             }
                         }
+                        return true
                     }
-                    return true
-                }
+                    .transition(.opacity)
+            }
         }
      
     }
@@ -85,6 +95,22 @@ struct InteractiveProfileGridView: View {
             fatalError("Profile not found")
         }
         return $profiles[index]
+    }
+
+    private func handleScroll() {
+        if !showSideBin {
+            withAnimation {
+                showSideBin = true
+            }
+        }
+        hideWorkItem?.cancel()
+        let task = DispatchWorkItem {
+            withAnimation {
+                showSideBin = false
+            }
+        }
+        hideWorkItem = task
+        DispatchQueue.main.asyncAfter(deadline: .now() + 10, execute: task)
     }
 }
 
